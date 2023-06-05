@@ -847,7 +847,7 @@ class CostAnalysisDashboard extends HTMLElement {
                             <label class="flex flex-row  min-h-fit lg:h-[26px] justify-center items-center gap-1" for="networkExistingAnnualLicensing">
                                 <div class="h-full">Existing Annual Licensing</div>
                                 <div class="input-wrapper hidden md:flex items-center h-full relative">
-                                    <img class="input-image  min-h-[25px] min-w-[25px] h-[25px] w-[25px]" src="./icons/question-mark-circle-icon.svg">
+                                    <img class="input-image  min-h-[25px] min-w-[25px] h-[25px] w-[25px]" src="/icons/question-mark-circle-icon.svg">
                                     <div class="input-description absolute top-0 text-base border-2 invisible opacity-0 bg-white h-full flex items-center justify-center left-[100%] top-0 w-max">** Current system annual license</div>
                                 </div>
                             </label>
@@ -882,7 +882,7 @@ class CostAnalysisDashboard extends HTMLElement {
                             <label class="flex flex-col lg:flex-row min-h-fit lg:h-[26px] justify-center items-center gap-1" for="productInitialCost">
                                 <div class="flex flex-col lg:flex-row items-center lg:items-baseline h-full"><div>Product Initial Cost&nbsp;</div><span class="flex items-center h-full text-base">(Must be provided by Product quote)</span></div>
                                 <div class="input-wrapper hidden md:flex items-center h-full relative">
-                                    <img class="input-image min-h-[25px] min-w-[25px] h-[25px] w-[25px]" src="./icons/question-mark-circle-icon.svg">
+                                    <img class="input-image min-h-[25px] min-w-[25px] h-[25px] w-[25px]" src="/icons/question-mark-circle-icon.svg">
                                     <div class="input-description top-0 text-base border-2 hidden invisible opacity-0 bg-white h-full flex items-center justify-center left-[100%] top-0 w-max absolute">** Total project cost</div>
                                 </div>
                             </label>
@@ -895,7 +895,7 @@ class CostAnalysisDashboard extends HTMLElement {
                             <label class="flex flex-col lg:flex-row min-h-fit lg:h-[26px] justify-center items-center gap-1" for="productAnnualLicensing">
                             <div class="flex flex-col lg:flex-row items-center lg:items-baseline h-full"><div>Product Annual Licensing&nbsp;</div><span class="flex items-center h-full text-base">(Must be provided by Product quote)</span></div>
                                 <div class="input-wrapper hidden md:flex  items-center h-full relative">
-                                    <img class="input-image min-h-[25px] min-w-[25px] h-[25px] w-[25px]" src="./icons/question-mark-circle-icon.svg">
+                                    <img class="input-image min-h-[25px] min-w-[25px] h-[25px] w-[25px]" src="/icons/question-mark-circle-icon.svg">
                                     <div class="input-description absolute top-0 text-base border-2 invisible opacity-0 bg-white h-full flex items-center justify-center left-[100%] top-0 w-max">** Expected Licensing Costs to use Product</div>
                                 </div>
                             </label>
@@ -908,7 +908,7 @@ class CostAnalysisDashboard extends HTMLElement {
                             <label class="flex flex-row justify-center items-center gap-1" for="existingAnnualLicensingRemain">
                             <div class="h-fit">Existing Annual Licensing to Remain</div>
                                 <div class="input-wrapper hidden md:flex items-center h-[26px] relative">
-                                    <img class="input-image min-h-[25px] min-w-[25px] h-[25px] w-[25px]" src="./icons/question-mark-circle-icon.svg">
+                                    <img class="input-image min-h-[25px] min-w-[25px] h-[25px] w-[25px]" src="/icons/question-mark-circle-icon.svg">
                                     <div class="input-description absolute top-0 text-base border-2 invisible opacity-0 bg-white h-full flex items-center justify-center left-[100%] top-0 w-max">** Software being kept for current system</div>
                                 </div>
                             </label>
@@ -1486,7 +1486,7 @@ class FormSection extends HTMLElement {
         this.innerHTML = `
             <div class="flex flex-row justify-between items-center">
                 <div class="form-title ">${this.getAttribute('formTitle')}</div>
-                ${this.getAttribute('formType') === "normal" ? "<button id='editSection' class='w-[20px] flex items-end'><img src='./icons/edit-block.svg'></button>" : "<button id='deleteSection' class='ml-auto mr-2 w-[20px] flex items-end'><img src='./icons/delete-block.svg'></button><button id='editSection' class='w-[20px] flex items-end'><img src='./icons/edit-block.svg'></button>"}
+                ${this.getAttribute('formType') === "normal" ? "<button id='editSection' class='w-[20px] flex items-end'><img src='/icons/edit-block.svg'></button>" : "<button id='deleteSection' class='ml-auto mr-2 w-[20px] flex items-end'><img src='/icons/delete-block.svg'></button><button id='editSection' class='w-[20px] flex items-end'><img src='/icons/edit-block.svg'></button>"}
             </div>
             <div class="flex flex-row justify-between text-xl">
                 <div class="form-description">${this.getAttribute('formType') === "normal" ? this.getAttribute('id') === "unitLocks" ? `<span id='numApartments'>${this.getAttribute('numApts')}</span> Apartments` : this.getAttribute('id') === "networkAccess" ? "Turnover + Existing" : this.getAttribute('id') === "productSystem" ? "Cost to switch" : "" : "Product Estimate:"}</div>
