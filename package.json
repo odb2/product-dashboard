@@ -4,7 +4,7 @@
     "http-server": "^14.1.1"
   },
   "scripts": {
-    "start": "live-server --port=8000 --entry-file=costAnalysisDashboard.html",
+    "start": "live-server --port=8000 --entry-file=index.html",
     "watch:css": "nodemon -e css,html,js -x \"postcss style.css -o output.css\"",
     "dev": "concurrently \"npm run watch:css\" \"npm start\""
   },
