@@ -1486,7 +1486,7 @@ class FormSection extends HTMLElement {
         this.innerHTML = `
             <div class="flex flex-row justify-between items-center">
                 <div class="form-title ">${this.getAttribute('formTitle')}</div>
-                ${this.getAttribute('formType') === "normal" ? "<button id='editSection' class='w-[20px] flex items-end'><img src='/icons/edit-block.svg'></button>" : "<button id='deleteSection' class='ml-auto mr-2 w-[20px] flex items-end'><img src='/icons/delete-block.svg'></button><button id='editSection' class='w-[20px] flex items-end'><img src='/icons/edit-block.svg'></button>"}
+                ${this.getAttribute('formType') === "normal" ? "<button id='editSection' class='w-[20px] flex items-end'><img src='./icons/edit-block.svg'></button>" : "<button id='deleteSection' class='ml-auto mr-2 w-[20px] flex items-end'><img src='./icons/delete-block.svg'></button><button id='editSection' class='w-[20px] flex items-end'><img src='./icons/edit-block.svg'></button>"}
             </div>
             <div class="flex flex-row justify-between text-xl">
                 <div class="form-description">${this.getAttribute('formType') === "normal" ? this.getAttribute('id') === "unitLocks" ? `<span id='numApartments'>${this.getAttribute('numApts')}</span> Apartments` : this.getAttribute('id') === "networkAccess" ? "Turnover + Existing" : this.getAttribute('id') === "productSystem" ? "Cost to switch" : "" : "Product Estimate:"}</div>
